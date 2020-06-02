@@ -9,6 +9,7 @@ import ResumeBtn from './ResumeBtn';
 import EduText from './text/EduText';
 import ExpText from './text/ExpText';
 import SkillsText from './text/SkillsText';
+import pdf from './JoMartinResume.pdf';
 
 
 class Resume extends Component{
@@ -136,7 +137,7 @@ class Resume extends Component{
                             
                             <ResumeBtn btnIcon={<Education/>} click={this.onEducationClick} type="Education"/>
                             <ResumeBtn btnIcon={<Experience />} click={this.onExperienceClick} type="Experience"/>
-                            <a href="JoMartinResume.pdf" target="_blank" download="Jo Martin Resume" ><ResumeBtn btnIcon={<Download />} click={this.externalEvent} type="Download"/></a>
+                            <a href={pdf} download><ResumeBtn btnIcon={<Download />} click={this.externalEvent} type="Download"/></a>
                         </div>
                         <div style={potentialBreak}>
                             <ResumeBtn btnIcon={<Skills />} click={this.onSkillsClick} type="Skills"/>
